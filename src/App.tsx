@@ -4,6 +4,7 @@ import { Button } from "./components/ui/button"
 import { HeroSection } from "./components/hero-section"
 import { WorkWithSection } from "./components/work-with-section"
 import { WeAreHereSection } from "./components/we-are-here-section"
+import { TestimonialSection } from "./components/testimonial-section"
 
 function App() {
 
@@ -35,6 +36,9 @@ function App() {
 
         {/* We are here section  */}
         <WeAreHereSection />
+
+        {/* testimonial section  */}
+        <TestimonialSection />
 
       </div>
     </>
