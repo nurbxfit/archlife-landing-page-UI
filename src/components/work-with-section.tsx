@@ -33,7 +33,7 @@ export const WorkWithSection = () => {
                         <Button className="bg-black text-white hover:bg-gray-800">Get Started</Button>
                     </div>
                     {/* track records */}
-                    <div className="grid grid-cols-3 gap-8 text-center">
+                    <div className="grid lg:grid-cols-3 gap-8 text-center">
                         {
                             trackRecords.map((record) => <div>
                                 <div className="text-4xl font-bold text-black mb-2">{record.title}</div>
