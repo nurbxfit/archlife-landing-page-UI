@@ -24,7 +24,7 @@ export const FaqSection = () => {
         }
     ]
     return (
-        <section className="px-6 py-16">
+        <section className="px-6 py-16 ">
             <div className="max-w-4xl mx-auto">
                 <div className="grid lg:grid-cols-2 gap-12">
                     <div>
@@ -37,30 +37,33 @@ export const FaqSection = () => {
                             Your Questions, Answered Everything You Need to Know
                         </p>
                     </div>
-                    <div className="mb-6">
-                        <h4 className="font-semibold text-lg mb-4">
-                            Buy, Sell & Diversify.
-                        </h4>
-                        <p className="text-gray-600 text-sm">
-                            Fractional Property Investing is the process of dividing an assets into smaller pieces to
-                            allow a number of investors to mutually own a percentage of the asset. Fractional
-                            Property Investing is the process of dividing an assets into smaller pieces.
-                        </p>
+                    <div>
+                        <div className="mb-6">
+                            <h4 className="font-semibold text-lg mb-4">
+                                Buy, Sell & Diversify.
+                            </h4>
+                            <p className="text-gray-600 text-sm">
+                                Fractional Property Investing is the process of dividing an assets into smaller pieces to
+                                allow a number of investors to mutually own a percentage of the asset. Fractional
+                                Property Investing is the process of dividing an assets into smaller pieces.
+                            </p>
+                        </div>
+                        <Accordion type="single" collapsible className="space-y-4">
+                            {
+                                faqs.map((faq, index) => (
+                                    <AccordionItem key={index} value={faq.key} className="border border-gray-200 rounded-lg px-4">
+                                        <AccordionTrigger className="text-left">
+                                            {faq.question}
+                                        </AccordionTrigger>
+                                        <AccordionContent className="text-gray-600">
+                                            {faq.answer}
+                                        </AccordionContent>
+                                    </AccordionItem>
+                                ))
+                            }
+                        </Accordion>
                     </div>
-                    <Accordion type="single" collapsible className="space-y-4">
-                        {
-                            faqs.map((faq, index) => (
-                                <AccordionItem key={index} value={faq.key} className="border border-gray-200 rounded-lg px-4">
-                                    <AccordionTrigger className="text-left">
-                                        {faq.question}
-                                    </AccordionTrigger>
-                                    <AccordionContent className="text-gray-600">
-                                        {faq.answer}
-                                    </AccordionContent>
-                                </AccordionItem>
-                            ))
-                        }
-                    </Accordion>
+
                 </div>
             </div>
         </section>
