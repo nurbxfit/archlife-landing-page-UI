@@ -1,69 +1,42 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# ArchLife Real Estate Landing Page
 
-Currently, two official plugins are available:
+A modern, responsive frontend demo for a real estate website, inspired by [this Dribbble design](https://dribbble.com/shots/25448416-Real-estate-UI-website-landing-page-design). Built with [React](https://react.dev/) and [TailwindCSS](https://tailwindcss.com/), this project features a stylish landing page with property listings, testimonials, FAQs, and more. Deployed on [Cloudflare](https://www.cloudflare.com/) for fast, global delivery.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Live Preview:**  
+[https://living-website-ui.nurbxfit.workers.dev/](https://living-website-ui.nurbxfit.workers.dev/)
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Getting Started
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+1. **Install dependencies:**
+  ```sh
+  pnpm install
+  ```
+2. **Run locally:**
+  ```sh
+  pnpm dev
+  ```
+3. **Build for production:**
+  ```sh
+  pnpm build
+  ```
+4. **Preview production build:**
+  ```sh
+  pnpm preview
+  ```
+5. **Deploy to Cloudflare:**
+  - Follow [Cloudflare Pages](https://pages.cloudflare.com/) or [Cloudflare Workers](https://developers.cloudflare.com/workers/) documentation.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Tech Stack
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **React 19**
+- **TailwindCSS 4**
+- **Vite**
+- **Cloudflare Pages & Workers**
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+UI inspired by [Dribbble: Real estate UI website landing page design](https://dribbble.com/shots/25448416-Real-estate-UI-website-landing-page-design).
