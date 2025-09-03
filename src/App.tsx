@@ -2,6 +2,8 @@ import { Languages } from "lucide-react"
 import { NavItems } from "./components/top-nav"
 import { Button } from "./components/ui/button"
 import { HeroSection } from "./components/hero-section"
+import { WorkWithSection } from "./components/work-with-section"
+import { WeAreHereSection } from "./components/we-are-here-section"
 
 function App() {
 
@@ -11,7 +13,7 @@ function App() {
         {/* header  */}
         <header className="flex items-center justify-between px-6 py-4 border-b border-gray-100">
           <div className="flex items-center space-x-8">
-            <h1 className="text-2xl font-bold text-black">Living</h1>
+            <h1 className="text-2xl font-bold text-black">Arch<span className="text-gray-600">Life</span></h1>
             {/* top nav  */}
             <NavItems />
           </div>
@@ -27,6 +29,12 @@ function App() {
 
         {/* hero section  */}
         <HeroSection />
+
+        {/* Work With Us Section */}
+        <WorkWithSection />
+
+        {/* We are here section  */}
+        <WeAreHereSection />
 
       </div>
     </>

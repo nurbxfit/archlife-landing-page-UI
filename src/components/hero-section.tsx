@@ -1,5 +1,7 @@
-import { Star } from "lucide-react"
+import { MapPin } from "lucide-react"
 import { StarRating } from "./star-rating"
+import { Badge } from "./ui/badge"
+import { Card, CardContent } from "./ui/card"
 
 export const HeroSection = () => {
     return (
@@ -29,6 +31,31 @@ export const HeroSection = () => {
 
                         {/* ratings  */}
                         <StarRating count={5} label="4.8" />
+                    </div>
+
+                    {/* hero iamge card with badges and captions */}
+                    <div className="flex flex-col space-y-4 md:relative">
+                        <div className="relative">
+                            <img
+                                src="/modern-architectural-building-with-curved-design.jpg"
+                                alt="Modern architectural building"
+                                className="w-full h-80 object-cover rounded-2xl"
+                            />
+                            <Badge className="absolute top-4 left-4 bg-white text-black">
+                                <MapPin className="h-3 w-3 mr-1" />
+                                Etalon City
+                            </Badge>
+                        </div>
+                        {/* captions card */}
+                        <Card className="md:absolute md:-bottom-16 md:-right-16 bg-white shadow-lg md:w-72">
+                            <CardContent className="p-4">
+                                <h4>Etalon City Real Estate</h4>
+                                <p>Experience uparralled luxury design in our most exclusive residential towers, where every detail reflects sophistication and comfort</p>
+                                <a href="#" className="text-sm text-blue-600 hover:underline">
+                                    See Detail
+                                </a>
+                            </CardContent>
+                        </Card>
                     </div>
                 </div>
             </section>
