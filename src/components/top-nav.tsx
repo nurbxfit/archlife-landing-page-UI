@@ -13,10 +13,7 @@ export const NavItems = () => {
             title: 'Residence',
             href: '#residence'
         },
-        {
-            title: 'Contact Us',
-            href: '#contact'
-        }
+
     ]
     return (
         <>

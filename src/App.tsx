@@ -1,6 +1,7 @@
-import { Search } from "lucide-react"
+import { Languages } from "lucide-react"
 import { NavItems } from "./components/top-nav"
 import { Button } from "./components/ui/button"
+import { HeroSection } from "./components/hero-section"
 
 function App() {
 
@@ -16,10 +17,17 @@ function App() {
           </div>
           <div className="flex items-center space-x-4">
             <Button variant={"ghost"} size={"icon"}>
-              <Search className="h-5 w-5" />
+              <Languages className="h-5 w-5" />
+            </Button>
+            <Button variant={"outline"} className="text-sm bg-transparent">
+              Contact Us
             </Button>
           </div>
         </header>
+
+        {/* hero section  */}
+        <HeroSection />
+
       </div>
     </>
   )
