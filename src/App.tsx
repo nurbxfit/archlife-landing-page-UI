@@ -5,6 +5,7 @@ import { HeroSection } from "./components/hero-section"
 import { WorkWithSection } from "./components/work-with-section"
 import { WeAreHereSection } from "./components/we-are-here-section"
 import { TestimonialSection } from "./components/testimonial-section"
+import { PropertyListingSection } from "./components/property-listing-section"
 
 function App() {
 
@@ -39,6 +40,9 @@ function App() {
 
         {/* testimonial section  */}
         <TestimonialSection />
+
+        {/* {Property Listing} */}
+        <PropertyListingSection />
 
       </div>
     </>
