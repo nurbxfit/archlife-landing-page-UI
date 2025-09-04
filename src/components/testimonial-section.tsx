@@ -2,7 +2,7 @@ import { StarRating } from "./star-rating"
 
 export const TestimonialSection = () => {
     return (
-        <section className="px-6 py-16 bg-gray-50">
+        <section id="testimonial" className="px-6 py-16 bg-gray-50">
             <div className="max-w-4xl mx-auto text-center">
                 <h3 className="text-3xl font-bold text-black mb-12">
                     See other people who have

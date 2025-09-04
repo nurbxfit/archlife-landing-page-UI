@@ -6,7 +6,7 @@ import { Card, CardContent } from "./ui/card"
 export const HeroSection = () => {
     return (
         <>
-            <section className="px-6 py-16 max-w-7xl mx-auto">
+            <section id="/" className="px-6 py-16 max-w-7xl mx-auto">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     <div>
                         <h2 className="text-5xl font-bold text-black leading-tight mb-6">

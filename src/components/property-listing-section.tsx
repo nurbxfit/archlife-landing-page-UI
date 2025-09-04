@@ -35,7 +35,7 @@ export const PropertyListingSection = () => {
         }
     ]
     return (
-        <section className="px-6 py-16 max-w-7xl mx-auto">
+        <section id="residence" className="px-6 py-16 max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center lg:mb-10">
                 <h3 className="text-4xl font-bold text-black mb-4">
                     So what kind of home

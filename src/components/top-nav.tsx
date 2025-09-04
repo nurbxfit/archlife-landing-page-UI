@@ -6,12 +6,16 @@ export const NavItems = () => {
             href: '#about'
         },
         {
-            title: 'Land for Sale',
-            href: '#sales'
+            title: 'Testimonials',
+            href: '#testimonial'
         },
         {
             title: 'Residence',
             href: '#residence'
+        },
+        {
+            title: 'FAQ',
+            href: '#faq'
         },
 
     ]

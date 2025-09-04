@@ -24,7 +24,7 @@ export const FaqSection = () => {
         }
     ]
     return (
-        <section className="px-6 py-16 ">
+        <section id="faq" className="px-6 py-16 ">
             <div className="max-w-4xl mx-auto">
                 <div className="grid lg:grid-cols-2 gap-12">
                     <div>
