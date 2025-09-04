@@ -1,24 +1,10 @@
+import type { INavItems } from "@/lib/constants"
 
-export const NavItems = () => {
-    const navItems = [
-        {
-            title: 'About us',
-            href: '#about'
-        },
-        {
-            title: 'Testimonials',
-            href: '#testimonial'
-        },
-        {
-            title: 'Residence',
-            href: '#residence'
-        },
-        {
-            title: 'FAQ',
-            href: '#faq'
-        },
+interface NavItemsProps {
+    navItems: INavItems
+}
+export const NavItems = ({ navItems }: NavItemsProps) => {
 
-    ]
     return (
         <>
             <nav className="hidden md:flex items-center space-x-6">
