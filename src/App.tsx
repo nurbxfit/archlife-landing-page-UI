@@ -11,6 +11,7 @@ import { Footer } from "./components/footer"
 import './App.css'
 import { navItems } from "./lib/constants"
 import { MobileBotomNav } from "./components/mobile-bottom-nav"
+import { ContactDialog } from "./components/contact-dialog"
 
 function App() {
 
@@ -28,9 +29,7 @@ function App() {
             <Button variant={"ghost"} size={"icon"}>
               <Languages className="h-5 w-5" />
             </Button>
-            <Button variant={"outline"} className="text-sm bg-transparent">
-              Contact Us
-            </Button>
+            <ContactDialog />
           </div>
         </header>
 
