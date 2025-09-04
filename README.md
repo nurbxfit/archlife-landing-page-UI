@@ -4,7 +4,7 @@
 A modern, responsive frontend demo for a real estate website, inspired by [this Dribbble design](https://dribbble.com/shots/25448416-Real-estate-UI-website-landing-page-design). Built with [React](https://react.dev/) and [TailwindCSS](https://tailwindcss.com/), this project features a stylish landing page with property listings, testimonials, FAQs, and more. Deployed on [Cloudflare](https://www.cloudflare.com/) for fast, global delivery.
 
 **Live Preview:**  
-[https://living-website-ui.nurbxfit.workers.dev/](https://living-website-ui.nurbxfit.workers.dev/)
+[https://archlife.dev.nurbxfit.com/](https://archlife.dev.nurbxfit.com/)
 
 
 
