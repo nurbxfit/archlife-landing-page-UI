@@ -11,7 +11,7 @@ export const ContactDialog = () => {
 
     const handleSubmit = (type: "email" | "whatsapp") => {
         if (type == "email") {
-            const mailto = `mailto:your@email.com?subject=Contact from ${form.name}&body=${form.message}`
+            const mailto = `mailto:me@nurbxfit.com?subject=Contact from ${form.name}&body=${form.message}`
             window.location.href = mailto
         } else {
             const whatsapp = `https://wa.me/60123456789?text=Hi, I'm ${form.name}. ${form.message}`
